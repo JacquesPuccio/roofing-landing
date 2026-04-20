@@ -33,6 +33,10 @@ export default function Home() {
           </a>
 
         </div>
+
+        <p className="mt-4 text-sm text-white/60">
+  Powered by Icon Roofing Group • Licensed #: c1332825 • Serving Central Florida © 2026 All Rights Reserved.
+</p>
       </section>
 
       {/* TRUST */}
