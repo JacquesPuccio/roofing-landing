@@ -152,11 +152,14 @@ export default function Home() {
 
         {/* TRUST BADGES */}
         {/* TRUST IMAGE */}
-        <img
-          src="/trust.png"
-          alt="Roofing certifications"
-          className="mx-auto w-full max-w-3xl opacity-90"
-        />
+        <div className="flex flex-wrap justify-center gap-6 items-center mt-6">
+          <img src="/gaf.png" className="h-10 object-contain grayscale hover:grayscale-0 transition" />
+          <img src="/certainteed.png" className="h-10 object-contain grayscale hover:grayscale-0 transition" />
+          <img src="/bbb.png" className="h-10 object-contain grayscale hover:grayscale-0 transition" />
+          <img src="/master.png" className="h-10 object-contain grayscale hover:grayscale-0 transition" />
+          <img src="/gafcertified.png" className="h-10 object-contain grayscale hover:grayscale-0 transition"/>
+          
+        </div>
 
         <p className="mt-6 text-sm text-white/50">
           Trusted Roofing Contractors in Orlando • Fully Licensed & Insured
