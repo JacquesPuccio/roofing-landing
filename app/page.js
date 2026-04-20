@@ -8,18 +8,20 @@ export default function Home() {
 
     const val = [source, medium, campaign].filter(Boolean).join("|");
 
-    const el = document.getElementById("source");
-    if (el) el.value = val;
+    setTimeout(() => {
+      const el = document.getElementById("source");
+      if (el) el.value = val;
+    }, 300);
   }, []);
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
       {/* HERO */}
       <section className="px-6 py-16 text-center">
         <img
-  src="/logo.png"
-  alt="Icon Roofing Group"
-  className="mx-auto mb-6 w-40"
-/>
+          src="/logo-dark.2504111458271.png"
+          alt="Icon Roofing Group"
+          className="mx-auto mb-6 w-48"
+        />
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Roof Repair in Orlando
           <br />
@@ -138,8 +140,27 @@ export default function Home() {
           📞 Call Now — 24/7
         </a>
       </div>
+      {/* FOOTER */}
+      <section className="px-6 py-12 border-t border-white/10 text-center">
+        {/* LOGO */}
+        <img
+          src="/logo-dark.2504111458271.png"
+          alt="Icon Roofing Group"
+          className="mx-auto mb-6 w-40 opacity-90"
+        />
 
-     
+        {/* TRUST BADGES */}
+        {/* TRUST IMAGE */}
+        <img
+          src="/trust.png"
+          alt="Roofing certifications"
+          className="mx-auto w-full max-w-3xl opacity-90"
+        />
+
+        <p className="mt-6 text-sm text-white/50">
+          Trusted Roofing Contractors in Orlando • Fully Licensed & Insured
+        </p>
+      </section>
     </main>
   );
 }
