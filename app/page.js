@@ -153,19 +153,32 @@ export default function Home() {
         {/* TRUST BADGES */}
         {/* TRUST IMAGE */}
         {/* TRUST BADGES */}
-<div className="flex flex-wrap justify-center gap-8 mt-6 items-center">
-  
-  <img src="/gaf.png" className="h-10 object-contain brightness-110 contrast-125" />
+        <div className="flex flex-wrap justify-center gap-8 mt-6 items-center">
+          <img
+            src="/gaf.png"
+            className="h-10 object-contain brightness-110 contrast-125"
+          />
 
-  <img src="/certainteed.png" className="h-10 object-contain brightness-110 contrast-125" />
+          <img
+            src="/certainteed.png"
+            className="h-10 object-contain brightness-110 contrast-125"
+          />
 
-  <img src="/bbb.png" className="h-10 object-contain brightness-110 contrast-125" />
+          <img
+            src="/bbb.png"
+            className="h-10 object-contain brightness-110 contrast-125"
+          />
 
-  <img src="/master.png" className="h-10 object-contain brightness-110 contrast-125" />
+          <img
+            src="/master.png"
+            className="h-10 object-contain brightness-110 contrast-125"
+          />
 
-  <img src="/gafcertified.png" className="h-10 object-contain brightness-110 contrast-125" />
-
-</div>
+          <img
+            src="/gafcertified.png"
+            className="h-10 object-contain brightness-110 contrast-125"
+          />
+        </div>
 
         <p className="mt-6 text-sm text-white/50">
           Trusted Roofing Contractors in Orlando • Fully Licensed & Insured
