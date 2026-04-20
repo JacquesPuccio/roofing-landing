@@ -138,8 +138,16 @@ export default function Home() {
 
         <a
           href="tel:+14074769166"
-          className="bg-red-500 hover:bg-red-400 text-white px-6 py-4 rounded-full shadow-xl text-lg font-semibold"
-        >
+           onClick={() => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "call_click", {
+        event_category: "engagement",
+        event_label: "call_now_button",
+      });
+    }
+  }}
+  className="bg-red-500 hover:bg-red-400 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg shadow-red-500/30"
+>
           📞 Call Now — 24/7
         </a>
       </div>
