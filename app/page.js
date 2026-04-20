@@ -91,6 +91,21 @@ export default function Home() {
           <form
             action="https://formspree.io/f/meevgapa"
             method="POST"
+            onSubmit={(e) => {
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", "form_submit", {
+      event_category: "lead",
+      event_label: "roofing_form",
+    });
+  }
+
+  // pequeña pausa para asegurar envío del evento
+  setTimeout(() => {
+    e.target.submit();
+  }, 300);
+
+  e.preventDefault();
+}}
             className="mt-8 flex flex-col gap-4"
           >
             <input type="hidden" name="source" id="source" />
@@ -138,16 +153,16 @@ export default function Home() {
 
         <a
           href="tel:+14074769166"
-           onClick={() => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "call_click", {
-        event_category: "engagement",
-        event_label: "call_now_button",
-      });
-    }
-  }}
-  className="bg-red-500 hover:bg-red-400 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg shadow-red-500/30"
->
+          onClick={() => {
+            if (typeof window !== "undefined" && window.gtag) {
+              window.gtag("event", "call_click", {
+                event_category: "engagement",
+                event_label: "call_now_button",
+              });
+            }
+          }}
+          className="bg-red-500 hover:bg-red-400 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg shadow-red-500/30"
+        >
           📞 Call Now — 24/7
         </a>
       </div>
