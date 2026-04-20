@@ -18,11 +18,13 @@ export default function Home() {
     <main className="min-h-screen bg-neutral-950 text-white">
       {/* HERO */}
       <section className="px-6 py-16 text-center">
-        <img
-          src="/logo-dark.2504111458271.png"
-          alt="Icon Roofing Group"
-          className="mx-auto mb-6 w-48"
-        />
+        <div className="inline-block bg-white p-4 rounded-xl shadow-lg mb-6">
+          <img
+            src="/logo-dark.2504111458271.png"
+            alt="Icon Roofing Group"
+            className="w-48 object-contain"
+          />
+        </div>
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Roof Repair in Orlando
           <br />
@@ -144,11 +146,13 @@ export default function Home() {
       {/* FOOTER */}
       <section className="px-6 py-12 border-t border-white/10 text-center">
         {/* LOGO */}
-        <img
-          src="/logo-dark.2504111458271.png"
-          alt="Icon Roofing Group"
-          className="mx-auto mb-6 w-40 opacity-90"
-        />
+        <div className="inline-block bg-white p-3 rounded-lg shadow-md mb-6">
+          <img
+            src="/logo-dark.2504111458271.png"
+            alt="Icon Roofing Group"
+            className="w-32 object-contain"
+          />
+        </div>
 
         {/* TRUST BADGES */}
         {/* TRUST IMAGE */}
