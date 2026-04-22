@@ -92,20 +92,20 @@ export default function Home() {
             action="https://formspree.io/f/meevgapa"
             method="POST"
             onSubmit={(e) => {
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", "form_submit", {
-      event_category: "lead",
-      event_label: "roofing_form",
-    });
-  }
+              if (typeof window !== "undefined" && window.gtag) {
+                window.gtag("event", "form_submit", {
+                  event_category: "lead",
+                  event_label: "roofing_form",
+                });
+              }
 
-  // pequeña pausa para asegurar envío del evento
-  setTimeout(() => {
-    e.target.submit();
-  }, 300);
+              // pequeña pausa para asegurar envío del evento
+              setTimeout(() => {
+                e.target.submit();
+              }, 300);
 
-  e.preventDefault();
-}}
+              e.preventDefault();
+            }}
             className="mt-8 flex flex-col gap-4"
           >
             <input type="hidden" name="source" id="source" />
@@ -208,7 +208,9 @@ export default function Home() {
         </div>
 
         <p className="mt-6 text-sm text-white/50">
-          Trusted Roofing Contractors in Orlando • Fully Licensed & Insured
+          Trusted Roofing Contractors in Orlando • Fully Licensed & Insured 
+          Powered by Icon Roofing Group • Licensed #: c1332825 • Serving Central
+          Florida © 2026 All Rights Reserved.
         </p>
       </section>
     </main>
