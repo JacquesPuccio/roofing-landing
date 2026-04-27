@@ -34,15 +34,15 @@ function CheckItem({ children }) {
 function FaqItem({ q, a }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="faq-item border-b border-white/10">
+    <div className="faq-item border-b border-gray-200">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center py-4 text-left font-semibold text-white/90 hover:text-white"
+        className="w-full flex justify-between items-center py-4 text-left font-semibold text-brand hover:text-accent"
       >
         <span>{q}</span>
         <span className={`faq-chevron text-accent text-xl transition-transform duration-200 ${open ? "rotate-180" : ""}`}>▾</span>
       </button>
-      {open && <p className="pb-4 text-white/70 text-sm leading-relaxed">{a}</p>}
+      {open && <p className="pb-4 text-gray-600 text-sm leading-relaxed">{a}</p>}
     </div>
   );
 }
@@ -341,9 +341,9 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { src: "https://placehold.co/600x400/1e3a5f/ffffff?text=Roof+Repair+1", alt: "Roof leak repair Orlando" },
-              { src: "https://placehold.co/600x400/0d1f35/ffffff?text=Storm+Damage+2", alt: "Storm damage repair Orlando" },
-              { src: "https://placehold.co/600x400/1e3a5f/ffffff?text=Shingle+Replace+3", alt: "Shingle replacement Orlando" },
+              { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop", alt: "Roof leak repair Orlando" },
+              { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop", alt: "Storm damage repair Orlando" },
+              { src: "https://images.unsplash.com/photo-1591588582259-e675bd2e6088?w=600&h=400&fit=crop", alt: "Shingle replacement Orlando" },
             ].map((img) => (
               <div key={img.src} className="gallery-card rounded-2xl overflow-hidden shadow-lg fade-up">
                 <img src={img.src} alt={img.alt} className="gallery-img w-full h-56 object-cover" loading="lazy" />

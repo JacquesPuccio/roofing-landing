@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-   title: "Roof Repair Orlando | 24/7 Emergency Service",
+  title: "Roof Repair Orlando | 24/7 Emergency Service",
   description:
     "Need roof repair in Orlando? Fast response, free estimates, licensed contractors. Call now.",
 };
@@ -25,22 +25,27 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-  {children}
+        {children}
 
-  {/* Google Analytics */}
-  <Script
-    src="https://www.googletagmanager.com/gtag/js?id=G-VZK77RSW86"
-    strategy="afterInteractive"
-  />
-  <Script id="google-analytics" strategy="afterInteractive">
-    {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-VZK77RSW86');
-    `}
-  </Script>
-</body>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VZK77RSW86"
+          strategy="afterInteractive"
+        />
+        <Script id="google-tags" strategy="afterInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // Google Analytics
+    gtag('config', 'G-VZK77RSW86');
+
+    // Google Ads
+    gtag('config', 'AW-18084107130');
+  `}
+        </Script>
+      </body>
     </html>
   );
 }
